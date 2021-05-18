@@ -1,4 +1,4 @@
-describe('Login spec', () => {
+describe('Login page', () => {
   it('should visit the login page', () => {
     cy.visit('/');
   });

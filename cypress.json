@@ -1,3 +1,11 @@
 {
-  "baseUrl": "http://localhost:4200"
+  "$schema": "https://on.cypress.io/cypress.schema.json",
+  "baseUrl": "http://localhost:4200",
+  "chromeWebSecurity": false,
+  "fixturesFolder": "cypress/fixtures",
+  "integrationFolder": "cypress/integration",
+  "pluginsFile": "cypress/plugins/index.ts",
+  "supportFile": "cypress/support/index.ts",
+  "screenshotsFolder": "output/e2e/screenshots",
+  "videosFolder": "output/e2e/videos"
 }
