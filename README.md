@@ -1,6 +1,6 @@
 # Angular-initializr
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.x.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.x.x.
 
 This is a Angular starter project, which will reduce the complexity of settings up
 a base project everytime.
