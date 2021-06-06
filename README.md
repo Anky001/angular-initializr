@@ -1,9 +1,9 @@
-# Angular-initializr
+# Angular-initializer
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.x.x.
 
 This is a Angular starter project, which will reduce the complexity of settings up
-a base project everytime.
+a base project every time.
 
 I have tried to follow all the best practices, from official and other Angular geeks 😉
 and I have also customized the default material theme, added angular flex-layout,
@@ -14,7 +14,7 @@ This starter project also comes with the awesome `Cypress` testing framework (Lo
 replaces the default `e2e` framework used in Angular projects.
 
 It also comes with Login and home component (with some code) as an example, so that you get familiar with
-this starter project and the way it is been setted up.
+this starter project and the way it is been made.
 
 I hope you love and enjoy this starter template, and also find it interesting 😎
 

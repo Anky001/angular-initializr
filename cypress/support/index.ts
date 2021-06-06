@@ -2,6 +2,11 @@
 // load type definitions that come with Cypress module
 /// <reference types="cypress" />
 
+// cypress/support/index.ts
+Cypress.Commands.add('dataCy', value => {
+  return cy.get(`[data-cy=${value}]`);
+});
+
 declare namespace Cypress {
   interface Chainable {
     /**
@@ -12,7 +17,7 @@ declare namespace Cypress {
   }
 }
 
-// // Ignores XHR request check
+// Ignores XHR request check
 Cypress.Server.defaults({
   delay: 500,
   force404: false,

@@ -4,9 +4,9 @@
     "baseUrl": "./",
     "paths": {
       "@env": ["environments/environment"],
-      "@shared/*": ["./src/app/shared/*"],
-      "@core/*": ["./src/app/core/*"],
-      "@utils/*": ["./src/app/utils/*"]
+      "@shared/*": ["src/app/shared/*"],
+      "@core/*": ["src/app/core/*"],
+      "@utils/*": ["src/app/utils/*"]
     },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
@@ -25,6 +25,5 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true
   },
-  "files": ["src/main.ts", "src/polyfills.ts"],
-  "include": ["src/**/*.d.ts"]
+  "exclude": ["cypress"]
 }
