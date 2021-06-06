@@ -36,8 +36,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
-Run `yarn test` to execute the unit tests via [Karma](https://karma-runner.github.io/latest/index.html)
-or `yarn test:watch` to watch the changes in the unit testing while you code them.
+Run `yarn test` to execute the unit tests via [Jest](https://jestjs.io/)
+or `yarn test:wc` to watch the changes in the unit testing while you code them.
 This project will also generate the code coverage which can be seen by hosting/deploying
 coverage folder.
 
@@ -56,8 +56,7 @@ open the cypress window.
 - [Angular](https://angular.io)
 - [Angular Material](https://material.angular.io)
 - [Angular Flex layout](https://github.com/angular/flex-layout)
-- [Jasmin](https://jasmine.github.io/)
-- [Karma](https://karma-runner.github.io/latest/index.html)
+- [Jest](https://jestjs.io)
 - [Cypress](https://www.cypress.io/)
 - [HTML](https://www.w3.org/html/)
 - [SCSS](https://sass-lang.com/)

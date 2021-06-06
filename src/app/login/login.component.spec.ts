@@ -1,25 +1,24 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-
+import { FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthService } from '@core/services/auth/auth.service';
+import { ErrorhandlingService } from '@core/services/error-handling/error-handling.service';
 import { LoginComponent } from './login.component';
-import { TestingModule } from '@utils/testing.module';
+
+let authServiceMock: AuthService;
+let errorhandlerServiceMock: ErrorhandlingService;
+let formBuilderMock: FormBuilder = new FormBuilder();
+let routerMock: Router;
 
 describe('LoginComponent', () => {
   let component: LoginComponent;
-  let fixture: ComponentFixture<LoginComponent>;
-
-  beforeEach(
-    waitForAsync(() => {
-      TestBed.configureTestingModule({
-        imports: [TestingModule],
-        declarations: [LoginComponent],
-      }).compileComponents();
-    })
-  );
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LoginComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    component = new LoginComponent(
+      authServiceMock,
+      errorhandlerServiceMock,
+      formBuilderMock,
+      routerMock
+    );
   });
 
   it('should create', () => {

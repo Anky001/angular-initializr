@@ -1,20 +1,12 @@
-import { TestBed, waitForAsync } from '@angular/core/testing';
-
 import { StorageService } from './storage.service';
 
 describe('StorageService', () => {
   let service: StorageService;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      providers: [StorageService],
-    }).compileComponents();
-
-    service = TestBed.inject(StorageService);
-  }));
+  beforeEach(() => (service = new StorageService()));
 
   afterAll(() => {
-    // @Todo Remove keys from localstorage
+    // @Todo Remove keys from local storage
     service.set('dummyKey', null);
     service.set('jsonKey', null);
   });
@@ -33,7 +25,7 @@ describe('StorageService', () => {
     expect(service.get('jsonKey')).toEqual({ username: 'Ankit Pant' });
   });
 
-  it('should return true if localstorage has the key', () => {
+  it('should return true if local storage has the key', () => {
     service.set('jsonKey', { username: 'Ankit Pant' });
     expect(service.has('jsonKey')).toBeTruthy();
   });
